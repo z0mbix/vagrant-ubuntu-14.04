@@ -49,3 +49,6 @@ for gem in ${gems[@]}; do
     gem install "$gem"
 done
 
+# Install AWS cli tool
+which aws >/dev/null ||
+  pip install --quiet awscli
